@@ -1,95 +1,281 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="반응형 개인 프로페셔널 웹사이트와 Games 섹션을 제공하는 정적 사이트" />
+  <meta name="description" content="반응형 개인 프로페셔널 웹사이트와 지렁이 게임을 포함한 정적 포트폴리오" />
   <title>SJH Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="홈으로 이동">
-        <span class="brand-mark">SJH</span>
-        <span class="brand-text">
-          <strong>Professional Portfolio</strong>
-          <small>Static HTML, CSS, JavaScript</small>
-        </span>
-      </a>
+  <a class="skip-link" href="#home">본문으로 건너뛰기</a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="menu-toggle-lines" aria-hidden="true"></span>
-        <span class="menu-toggle-label">Menu</span>
-      </button>
+  <div class="background-orb background-orb-a" aria-hidden="true"></div>
+  <div class="background-orb background-orb-b" aria-hidden="true"></div>
 
-      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#games">Games</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">SJH</span>
+      <div class="brand-copy">
+        <strong>Professional Portfolio</strong>
+        <span>Static HTML, CSS, JavaScript</span>
+      </div>
+    </div>
 
-    <main id="top">
-      <section class="hero section-card">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle-lines" aria-hidden="true"></span>
+      <span>Menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="page">
+    <section class="hero section-card">
+      <div class="hero-copy">
         <p class="eyebrow">Responsive Personal Website</p>
-        <h1>깔끔하고 신뢰감 있는 정적 웹사이트의 첫 뼈대를 만듭니다.</h1>
-        <p class="hero-copy">
-          현재 단계에서는 반응형 정보 구조와 `Games` 진입점을 먼저 준비합니다.
-          지렁이 게임 본체는 다음 루프에서 연결합니다.
+        <h1>신뢰감 있는 정적 프로페셔널 웹사이트의 완성본</h1>
+        <p class="lede">
+          이 사이트는 Home, About, Projects, Experience, Research, Contact와
+          키보드·터치 조작이 가능한 지렁이 게임을 한 번에 담는 정적 포트폴리오입니다.
         </p>
+
         <div class="hero-actions">
-          <a class="primary-button" href="#games">Games 보기</a>
-          <a class="secondary-button" href="#contact">연락처로 이동</a>
+          <a class="button button-primary" href="#projects">프로젝트 보기</a>
+          <a class="button button-secondary" href="#games">게임 실행</a>
         </div>
-      </section>
+      </div>
 
-      <section class="content-grid">
-        <article id="about" class="section-card panel">
-          <p class="section-kicker">About</p>
-          <h2>프로필 영역</h2>
-          <p>프로필 참고 자료가 없어 현재는 구조만 배치했습니다.</p>
+      <aside class="hero-panel" aria-label="핵심 요약">
+        <div class="hero-stat">
+          <span class="hero-stat-label">Focus</span>
+          <strong>정적 구현</strong>
+          <p>백엔드 없이 GitHub Pages에 맞춘 구조</p>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">Games</span>
+          <strong>Snake Arcade</strong>
+          <p>시작, 이동, 성장, 점수, 충돌, 일시정지, 재시작</p>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">Status</span>
+          <strong>Mobile Ready</strong>
+          <p>375px, 768px, 1440px 검증을 고려한 반응형 레이아웃</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section-card section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>프로필 소개</h2>
+        </div>
+        <span class="status-pill">[사람 확인 필요]</span>
+      </div>
+      <div class="split-grid">
+        <div class="text-card">
+          <p>
+            프로필 참고 자료가 없어 현재는 내용 구조를 먼저 고정했습니다.
+            이후 실제 경력과 소개 문구가 주어지면 같은 레이아웃에 바로 반영할 수 있습니다.
+          </p>
+          <p>
+            목표는 읽기 쉬운 정보 구조, 명확한 CTA, 그리고 모바일에서도 편한 탐색입니다.
+          </p>
+        </div>
+        <div class="fact-grid">
+          <div class="mini-card">
+            <span class="mini-label">Role</span>
+            <strong>프로페셔널 포트폴리오</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-label">Stack</span>
+            <strong>HTML / CSS / JavaScript</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-label">Profile</span>
+            <strong>[사람 확인 필요]</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-label">Design</span>
+            <strong>세련된 다크 테마</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-card section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>확인 가능한 작업 영역</h2>
+        </div>
+        <span class="status-pill">정적 콘텐츠</span>
+      </div>
+      <div class="card-grid">
+        <article class="project-card">
+          <span class="project-tag">01</span>
+          <h3>Responsive Portfolio Shell</h3>
+          <p>내비게이션, 영웅 섹션, About, Contact, 반응형 뼈대를 가진 기본 사이트.</p>
         </article>
-
-        <article id="work" class="section-card panel">
-          <p class="section-kicker">Work</p>
-          <h2>핵심 업무 영역</h2>
-          <p>이력, 기술, 프로젝트는 다음 데이터가 들어오면 확장할 수 있게 비워 두었습니다.</p>
+        <article class="project-card">
+          <span class="project-tag">02</span>
+          <h3>Snake Arcade</h3>
+          <p>게임 시작, 이동, 음식, 성장, 점수, 충돌, 일시정지, 재시작, 최고 점수.</p>
         </article>
-      </section>
+        <article class="project-card">
+          <span class="project-tag">03</span>
+          <h3>GitHub Pages Ready</h3>
+          <p>정적 HTML/CSS/JavaScript만으로 배포 가능한 구조를 우선 설계합니다.</p>
+        </article>
+      </div>
+    </section>
 
-      <section id="games" class="section-card games-panel">
-        <div class="section-heading">
+    <section id="experience" class="section-card section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>경력</h2>
+        </div>
+        <span class="status-pill">[사람 확인 필요]</span>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-year">Now</span>
           <div>
-            <p class="section-kicker">Games</p>
-            <h2>지렁이 게임 준비 영역</h2>
+            <h3>정적 포트폴리오 구축</h3>
+            <p>반응형 구조와 게임 섹션을 중심으로 최초 배포 가능한 사이트를 완성합니다.</p>
           </div>
-          <span class="status-pill">Coming next</span>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">TBD</span>
+          <div>
+            <h3>실제 경력 기입</h3>
+            <p>프로필 자료가 제공되면 이 영역에 경력 항목을 연결합니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section-card section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h2>연구 / 관심 분야</h2>
         </div>
-        <p class="games-copy">
-          이 섹션은 키보드와 모바일 터치로 조작하는 지렁이 게임을 붙일 자리입니다.
-          현재 루프에서는 영역과 접근 경로만 먼저 확보합니다.
-        </p>
-        <div class="games-placeholder" aria-hidden="true">
-          <div class="games-placeholder-screen"></div>
-          <div class="games-placeholder-controls">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <span class="status-pill">[사람 확인 필요]</span>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <h3>UI Systems</h3>
+          <p>읽기 쉬운 정보 구조, 반응형 레이아웃, 유지보수 가능한 정적 UI 패턴.</p>
+        </article>
+        <article class="research-card">
+          <h3>Interaction Design</h3>
+          <p>게임 조작과 모바일 버튼, 포커스 흐름, 키보드 접근성을 함께 다룹니다.</p>
+        </article>
+        <article class="research-card">
+          <h3>[사람 확인 필요]</h3>
+          <p>실제 연구 주제나 학습 키워드는 확인되면 이 카드에 반영합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="games" class="section-card section-block games-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Games</p>
+          <h2>지렁이 게임</h2>
+        </div>
+        <div class="game-badges">
+          <span class="status-pill">Keyboard</span>
+          <span class="status-pill">Touch</span>
+        </div>
+      </div>
+
+      <div class="game-layout">
+        <div class="game-stage">
+          <div class="game-metrics" aria-live="polite">
+            <span>Score: <strong id="score">0</strong></span>
+            <span>Best: <strong id="best-score">0</strong></span>
+            <span>Status: <strong id="game-status">Ready</strong></span>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas id="snake-canvas" width="400" height="400" aria-label="지렁이 게임 보드" role="img"></canvas>
+            <div class="game-overlay" id="game-overlay">
+              <strong>Press Start</strong>
+              <span>화살표, WASD, 모바일 버튼으로 조작</span>
+            </div>
+          </div>
+
+          <div class="game-actions">
+            <button type="button" class="button button-primary" id="start-button">Start</button>
+            <button type="button" class="button button-secondary" id="pause-button">Pause</button>
+            <button type="button" class="button button-secondary" id="restart-button">Restart</button>
           </div>
         </div>
-      </section>
 
-      <section id="contact" class="section-card contact-panel">
-        <p class="section-kicker">Contact</p>
-        <h2>연락처 영역</h2>
-        <p>연락처 정보는 추후 실제 자료에 맞춰 연결하면 됩니다.</p>
-      </section>
-    </main>
-  </div>
+        <div class="game-controls">
+          <p class="control-copy">
+            시작, 이동, 음식, 성장, 점수, 충돌, 게임 오버, 일시정지, 재시작, 최고 점수를 모두 지원합니다.
+          </p>
 
+          <div class="dpad">
+            <span></span>
+            <button type="button" data-direction="up" aria-label="위로 이동">▲</button>
+            <span></span>
+            <button type="button" data-direction="left" aria-label="왼쪽으로 이동">◀</button>
+            <button type="button" data-direction="down" aria-label="아래로 이동">▼</button>
+            <button type="button" data-direction="right" aria-label="오른쪽으로 이동">▶</button>
+          </div>
+
+          <div class="touch-hint">
+            <p>모바일에서는 화면 버튼으로 조작하세요.</p>
+            <p>반대 방향 방지와 중복 타이머 방지를 적용합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-card section-block contact-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>연락처</h2>
+        </div>
+        <span class="status-pill">[사람 확인 필요]</span>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="mini-label">Email</span>
+          <strong>[사람 확인 필요]</strong>
+        </div>
+        <div class="contact-card">
+          <span class="mini-label">GitHub</span>
+          <strong>sjh-sjh123</strong>
+        </div>
+        <div class="contact-card">
+          <span class="mini-label">Pages</span>
+          <strong>sjh-sjh123.github.io</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static portfolio for GitHub Pages.</p>
+  </footer>
+
+  <script src="game.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
